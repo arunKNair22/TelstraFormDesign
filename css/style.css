@@ -64,11 +64,34 @@ label {
   margin-bottom: 15px;
 }
 
+/* HEADER */
+
+header {
+  border-bottom: 1px solid #d8d8d8;
+}
+.progressive-form-container-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 8px 24px;
+  height: 50px;
+}
+
+.logo-img {
+  width: 100px;
+}
+
 /* FORMS */
+.container {
+  min-height: calc(100vh - 50px);
+  padding: 48px 0;
+}
 #qbox-container {
   background-repeat: repeat;
   position: relative;
-  padding: 62px;
+  padding: 48px;
   min-height: 630px;
   box-shadow: 10px 8px 21px 0px rgba(204, 204, 204, 0.75);
   -webkit-box-shadow: 10px 8px 21px 0px rgba(204, 204, 204, 0.75);
@@ -131,6 +154,10 @@ button#prev-btn:after, button#next-btn:after, button#submit-btn:after {
 button#prev-btn:hover::after, button#next-btn:hover::after, button#submit-btn:hover::after {
   transform: translateY(-80%);
   transition: transform .3s;
+}
+.progressive-form-container-close-button {
+  background: none;
+  border: none;
 }
 .progress {
   border-radius: 0px !important;
@@ -338,6 +365,13 @@ input[type="text"]:focus, input[type="email"]:focus {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 1200px){
+  .progressive-form-container-header {
+    padding: 22px 60px;
+  }
+
+}
+
 @media (min-width: 990px) and (max-width: 1199px) {
   #title-container {
     padding: 80px 28px 28px 28px;
